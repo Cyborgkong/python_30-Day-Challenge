@@ -12,6 +12,16 @@ def divide(x, y):
     if y == 0:
         return "Error: Cannot Divide by Zero (0)"
     return x / y
+def power(x, y):
+    return x ** y
+
+def modulo(x, y):
+    return x % y
+
+def square_root(x):
+    if x < 0:
+        return "Error: Cannot take square root of a negative number"
+    return x ** 0.5
 
 # LOOPING FOR CONTINUOUS USE
 while True:
@@ -21,6 +31,10 @@ while True:
     print("- for subtract")
     print("* for multiplication")
     print("/ for division")
+    print("^ for Power")
+    print("'%' for Modulo")
+    print("sqrt for Square Root")
+    print("exit to quit")
     print("Exit to quit")
 
     choice = input("Enter operator symbol (+, -, *, /) or type 'exit': ").strip()
