@@ -1,7 +1,7 @@
 import json
 import os
 
-FILE_PATH = 'users.json'
+FILE_PATH = 'json Projects\users.json'
 
 def load_data():
     if not os.path.exists(FILE_PATH):
