@@ -17,7 +17,7 @@ def check_balance(name):
     if name in users:
         print(f"{name}'s balance is: {users[name]['balance']}")
     else:
-        print("User not found.")
+        new_user(name)
         
 def deposit(name, amount):
     if name in users:
@@ -35,6 +35,17 @@ def withdraw(name, amount):
             print("Insufficient funds.")
     else:
         print("User not found.")
+        
+def new_user(name):
+    print(f"User '{name}' not found.")
+    sign_up = input("Do you want to sign up? (y/n): ")
+    if sign_up.lower() == 'y':
+        users[name] = {'balance': 0.00}
+        save_data(users)
+        print(f"User '{name}' created with balance 0.00.")
+    else:
+        print("Sign-up cancelled.")
+
      
 users = load_data()   
 save_data(users)
@@ -44,7 +55,8 @@ while True:
     print("1. Check Balance")
     print("2. Deposit")
     print("3. Withdraw")
-    print("4. Exit")
+    print("4. New User")
+    print("5. Exit")
     
     choice = input("Enter choice: ")
     
@@ -62,6 +74,9 @@ while True:
         withdraw(name, amount)
         save_data(users)
     elif choice == '4':
+        name = input("Enter new username: ")
+        new_user(name)
+    elif choice == '5':
         print("Exiting....")
         break
     else:
