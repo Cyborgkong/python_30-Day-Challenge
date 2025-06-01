@@ -1,0 +1,4 @@
+Hello world.
+This is a sample file.
+Python is awesome. Python is versatile.
+Hello again, world!
