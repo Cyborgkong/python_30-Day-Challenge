@@ -1,0 +1,7 @@
+users = [
+    {
+        "name": "Adam",
+        "age": "18",
+        "email": "adammoses322@gmail.com"
+    }
+]
