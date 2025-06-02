@@ -1,11 +1,17 @@
 {
     "Adam": {
-        "balance": 1220.0
+        "password": "1234",
+        "balance": 1000,
+        "transactions": []
     },
     "Moses": {
-        "balance": 1200
+        "password": "abcd",
+        "balance": 500,
+        "transactions": []
     },
     "Daniel": {
-        "balance": 900
+        "password": "pass",
+        "balance": 750,
+        "transactions": []
     }
 }
