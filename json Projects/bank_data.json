@@ -13,5 +13,10 @@
         "password": "pass",
         "balance": 750,
         "transactions": []
+    },
+    "Nathaniel": {
+        "password": "54321",
+        "balance": 2000.0,
+        "transactions": []
     }
 }
